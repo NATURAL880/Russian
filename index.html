@@ -3,90 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1XB</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-        <nav class="nav">
-            <button class="nav-toggle" id="navToggle"></button>
-            <ul class="nav-list" id="navList">
-            <li><a href="#home" class="nav-link">Главная</a></li>
-            <li><a href="#aboun" class="nav-link">о сайтк</a></li>
-            <li><a href="#bast" class="nav-link">Про что сайт</a></li>
-            <li><a href="#contasts" class="nav-link">=Контакты</a></li>
-        </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="container"></div>
+            <h1>Welcome</h1>
+            <p>We are glad to see you on our website</p>
+        </div>
     </header>
 
-    <main class="main">
-        <selection class="home" id="home">
-            <div class="container">
-                <h1>ставки на спорт один X бет</h1>
-                <p>написаный текст</p>
-            </div>
-        </selection>
-
-
-        <section class="section" id="section">
-            <div class="container">
-                <h2>рандомный текст</h2>
-                <div class="aboun-container">
-                    <p>просто сайт</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="base" class="section">
-            <div class="container">
-                <h2 class="section-title">что-то рандомное</h2>
-                <div class="base-grid">
-                    <div class="caed">
-                        <h3 class="base-title">республи Россия</h3>
-                        <p>гранат</p>
-                    </div>
-
-                    <div class="caed">
-                        <h3 class="base-title">арабские эмираты</h3>
-                        <p>Дота 2</p>
-                    </div>
-
-                    <div class="caed">
-                        <h3 class="base-title">республика Китай</h3>
-                        <p>тоже что-то рандомное</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="container" class="section">
-            <div class="container">
-                <h2 class="section-title">контакты</h2>
-                <div class="contact-conteiner">
-                    <p class="content-text">святытесь с нами</p>
-                    <div class="contact-form">
-                        <div class="form-group">
-                            <imput type="text" id="name" placeholder="вашe имя"></imput>
-                        </div>
-                        <div class="form-group">
-                            <imput type="email" id="email" placeholder="ваше email"></imput>
-                        </div>
-                        <div class="form-group">
-                            <textarea type="massaqe" id="massaqe" placeholder="ваше сообщение "rowe="4"></textarea>
-                        </div>
-                        <button class="btn" id="sendmesseqe">отправить только()</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">]
+    <nav>
         <div class="container">
-            <p>русский сайт &copy; <span id="currentYear"></span> </p>
-            <div class=""
+            <ui class="nav-links">
+                <li><a href="#" class="active" data-page="home">Главная</li>
+                <li><a href="#" class="active" data-page="about">О нас</li>
+                <li><a href="#" class="active" data-page="services">Услуги</li>
+                <li><a href="#" class="active" data-page="home">Контакты</li>
+            </ui>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="content-area">
+            <div class="content active" id="home-content">
+                    <h2>Главная страница</h2>
+                    <p>Hi in my web mini-world</p>
+                    <button id="change color-btn" class="btn">Change back color</button>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Fast</h3>
+                    </div>
+                    <div class="feature">
+                        <h3>Secure</h3>
+                    </div>
+                    <div class="feature">
+                        <h3>With soul</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="about-content">
+                <h2>About us</h2>
+                <p>I'm user of Python 3</p>
+                <p>I'm user of Javascript</p>
+            </div>
+            
+            <div class="content" id="service-content">
+                <h2>Services</h2>
+                <ul>
+                    <li>FRONTEND</li>
+                    <li>BACKEND</li>
+               </ul>
+            </div>
+            <div class="content" id="service-content">
+                <h2>Contacts</h2>
+                <p>+7 529 212-21-23</p>
+                <p>example@gmail.com</p>
+            </div>
+            <button id="show-alert" class="btn">Show welcome</button>
+        </section>
+
+        <aside>
+            <h3>Counter visitors</h3>
+            <p>Ya was here times:<span></span></p>
+            <h3>Interesting fact</h3>
+            <p id="fact-text">Нажамите на кнпоку чтобы начать</p>
+            <button id="fact-btn" class="btn">New fact</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy;2013 Мой сайт.</p>
         </div>
     </footer>
 </body>
