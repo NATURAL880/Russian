@@ -4,78 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <div class="container"></div>
+        <div class="container">
             <h1>Welcome</h1>
-            <p>We are glad to see you on our website</p>
+            <p>we are glad to see on</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
-            <ui class="nav-links">
-                <li><a href="#" class="active" data-page="home">Главная</li>
-                <li><a href="#" class="active" data-page="about">О нас</li>
-                <li><a href="#" class="active" data-page="services">Услуги</li>
-                <li><a href="#" class="active" data-page="home">Контакты</li>
-            </ui>
-        </div>
+        <ul class="nav-links">
+        <li><a href="#" class="active" data-page="home">Главная</a></li>
+        <li><a href="#" class="active" data-page="about">О нас</a></li>
+        <li><a href="#" class="active" data-page="services">Услуги</a></li>
+        <li><a href="#" class="active" data-page="contact">Контакты</a></li>
+    </ul>
+</div>
     </nav>
 
     <main class="container">
-        <section id="content-area">
-            <div class="content active" id="home-content">
-                    <h2>Главная страница</h2>
-                    <p>Hi in my web mini-world</p>
-                    <button id="change color-btn" class="btn">Change back color</button>
-                </div>
-                <div class="features">
-                    <div class="feature">
-                        <h3>Fast</h3>
-                    </div>
-                    <div class="feature">
-                        <h3>Secure</h3>
-                    </div>
-                    <div class="feature">
-                        <h3>With soul</h3>
-                    </div>
-                </div>
-            </div>
+    <section id="content-area">
+    <div class="content active" id="home-content">
+        <h2>Главная страница</h2>
+        <p>Hi in mu web mini wiorld</p>
+        <button id="change-color-btn" class="btn" change back color></button>
+    <div class="features">
+        <div class="feature">
+            <h3>Fast</h3>
+        </div>
+        <div class="feature">
+            <h3>secure</h3>
+        </div>
+        <div class="feature">
+            <h3>with soul</h3>
+        </div>
+    </div>
+</div>
 
-            <div class="content" id="about-content">
-                <h2>About us</h2>
-                <p>I'm user of Python 3</p>
-                <p>I'm user of Javascript</p>
-            </div>
-            
-            <div class="content" id="service-content">
-                <h2>Services</h2>
-                <ul>
-                    <li>FRONTEND</li>
-                    <li>BACKEND</li>
-               </ul>
-            </div>
-            <div class="content" id="service-content">
-                <h2>Contacts</h2>
-                <p>+7 529 212-21-23</p>
-                <p>example@gmail.com</p>
-            </div>
-            <button id="show-alert" class="btn">Show welcome</button>
-        </section>
+<div class="content" id="about-content">
+    <h2>about us</h2>
+    <p>YA lubitel gonok</p>
+    <p>and web developer</p>
+</div>
 
-        <aside>
-            <h3>Counter visitors</h3>
-            <p>Ya was here times:<span></span></p>
-            <h3>Interesting fact</h3>
-            <p id="fact-text">Нажамите на кнпоку чтобы начать</p>
-            <button id="fact-btn" class="btn">New fact</button>
-        </aside>
+<div class="content" id="services-content">
+    <h2>about us</h2>
+    <ul>
+        <li>frontend</li>
+        <li>BACKED</li>
+    </ul>
+</div>
+
+<div class="contact" id="contact-content">
+    <P>contact</P>
+    <P>8 (800) 555 35 35</P>
+    <p>ru@mail.com</p>
+</div>
+<button id="show-alert" class="btn" show welcome></button>
+    </section>
+
+    <aside>
+        <h3>counter visitors</h3>
+        <P>u was here times: <span id="visit-count">0</span></P>
+
+        <h3> interesting fact</h3>
+        <p id="fact-text">нажмите кнопку чтобы начать</p>
+        <button id="fact-btn" class="btn">new fact</button>
+    </aside>
+
     </main>
+
     <footer>
         <div class="container">
-            <p>&copy;2013 Мой сайт.</p>
+            <p>&copy; 2023 мой сайт</p>
         </div>
     </footer>
 </body>
