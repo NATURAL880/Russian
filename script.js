@@ -20,6 +20,9 @@ document.addEventListener('DomContentLoaded',function(){
     const factBtn = document.getElementById(fact-Btn)
     factBtn.addEventListener('click',showGreeting);
 
+    const alertBtn = document.getElementById('show-alert');
+    alertBtn.addEventListener('click',showGreeting)
+
     showRundomFact();
 });
 
@@ -66,3 +69,59 @@ function changeBacgroundColor() {
         message.remove();
         },3000);
     }
+
+    function showRundomFact() {
+        const facts = [
+            "HTML был создан в 1991 году Тимом Берненсом-Ли",
+            "Css был впервые предложен в 1994 году",
+            "JavaScript был создан всего за 10 дней",
+            "Первый сайт в мире был запущен в 1991 году",
+            "Более 50% трафика в интернете генерируется мобильными устройствами"
+        ];
+    }
+
+    function showGreeting() {
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 6)
+        {
+            greeting = "доброй ночи";
+        }
+        else if (hour < 12) {
+            greeting="доброе утро"
+        }
+        else if (hour < 18) {
+            greeting="добрый день"
+        }
+        else {
+            greeting="добрый вечер"
+        }
+
+        alert(`${greeting}\n\nThank u for ur visit\n\nHave a nice day!`)
+    }
+
+    function initVisitCounter() {
+        let visitCount = localStorage.getItem('visitCount')
+
+        if (visitCount) {
+            visitCount = parseInt(visitCount) + 1;
+        }
+        else {
+            visitCount = 1;
+        }
+
+        localStorage.setItem('visitCount',visitCount);
+        document.getElementById('visit-count').textContent = visitCount;
+    }
+
+    function logPageView(page) {
+        console.log(page);
+    }
+
+    document.querySelectorAll('.nav-links-a').forEach(links => {
+        links.addEventListener('click',function (){
+            const page = this.getAttribute('data-page')
+            logPageView(page);
+        });
+    });
